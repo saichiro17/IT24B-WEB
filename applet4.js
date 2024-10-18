@@ -1,5 +1,4 @@
 class StudentList {
-    
     constructor(dataUrl) {
         this.dataUrl = dataUrl;
         this.students = [];
@@ -21,11 +20,10 @@ class StudentList {
         }
     }
 
-    renderStudentList(students) {
-        const studentListContainer = document.getElementById('studentList');
+    renderStudentList(students, containerId = 'studentList') {
+        const studentListContainer = document.getElementById(containerId);
         studentListContainer.innerHTML = students.map(student => 
-            `<button class="btn btn-primary" style="margin-top:15px; 
-                                                    width:25rem">
+            `<button class="btn btn-primary" style="margin-top:15px; width:25rem">
                 ${student.student_name} | ${student.student_program}
             </button><br>`
         ).join('');
@@ -38,8 +36,6 @@ class StudentList {
         studentSearchBar.addEventListener('input', () => {
             this.filterStudents(studentSearchBar.value, studentSearchListContainer);
         });
-
-        this.renderStudentList(this.students, studentSearchListContainer);
     }
 
     filterStudents(query, searchListContainer) {
@@ -48,11 +44,8 @@ class StudentList {
             return fullName.toLowerCase().includes(query.toLowerCase());
         });
 
-        searchListContainer.innerHTML = '';
-
-        this.renderStudentList(filteredStudents, searchListContainer);
+        this.renderStudentList(filteredStudents, 'studentSearchList');
     }
-    
 }
 
 const studentList = new StudentList('applet4.json');
