@@ -1,7 +1,7 @@
 [
     {
       "student_id": 1,
-      "student_name": "Harold Balabat",
+      "student_name": "Brylle Joseph Abad",
       "student_program": "BS-Computer Science",
       "student_enrolled_date": "2023-01-15"
     },
@@ -13,13 +13,13 @@
     },
     {
       "student_id": 3,
-      "student_name": "Clint Nabalian",
+      "student_name": "Harold Khien Balabat",
       "student_program": "BS - Information Technology",
       "student_enrolled_date": "2023-03-10"
     },
     {
       "student_id": 4,
-      "student_name": "Aldrin Nabalian",
+      "student_name": "Weniel Rana",
       "student_program": "BS - Information Technology",
       "student_enrolled_date": "2023-03-10"
     }
