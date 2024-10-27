@@ -12,7 +12,7 @@ class TodoList {
                            e.target.classList.contains('doneButton') ? 'done' : null;
             if (action) this[action + 'Task'](e);
         });
-    
-
+    }
+    addOrUpdateTask() {
     }
 }
