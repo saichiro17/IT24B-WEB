@@ -18,6 +18,7 @@ class WeatherApp{
     displayWeather(data){
         this.cityName.textContent = `${data.name}, ${data.sys.country} (${data.coord.lat}, ${data.coord.lon})`;
         this.temperature.textContent = `Temperature: ${data.main.temp} °C`;
+        this.description.textContent = `Weather: ${data.weather[0].description}`;
        
     }
 }
