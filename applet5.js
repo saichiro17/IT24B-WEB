@@ -1,3 +1,4 @@
 class WeatherApp{
-    
+    constructor(){
+    }
 }
