@@ -15,4 +15,6 @@ class WeatherApp{
         this.getLocationBtn.addEventListener('click', () => this.fetchWeatherByLocation());
 
     }
+    displayWeather(data){
+    }
 }
