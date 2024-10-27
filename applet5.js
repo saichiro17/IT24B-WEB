@@ -22,5 +22,6 @@ class WeatherApp{
         this.humidity.textContent = `Humidity: ${data.main.humidity}%`;
         this.windSpeed.textContent = `Wind Speed: ${data.wind.speed} m/s`;
         
+        this.weatherCard.style.display = 'block';
     }
 }
