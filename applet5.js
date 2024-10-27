@@ -20,6 +20,7 @@ class WeatherApp{
         this.temperature.textContent = `Temperature: ${data.main.temp} °C`;
         this.description.textContent = `Weather: ${data.weather[0].description}`;
         this.humidity.textContent = `Humidity: ${data.main.humidity}%`;
-       
+        this.windSpeed.textContent = `Wind Speed: ${data.wind.speed} m/s`;
+        
     }
 }
