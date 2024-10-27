@@ -6,6 +6,7 @@ class TodoList {
         this.todoList = document.getElementById('todoList');
 
         this.addButton.addEventListener('click', () => this.addOrUpdateTask());
+        this.todoList.addEventListener('click', (e) => {
 
     }
 }
