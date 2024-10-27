@@ -16,5 +16,7 @@ class WeatherApp{
 
     }
     displayWeather(data){
+        this.cityName.textContent = `${data.name}, ${data.sys.country} (${data.coord.lat}, ${data.coord.lon})`;
+       
     }
 }
