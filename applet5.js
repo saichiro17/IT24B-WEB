@@ -12,6 +12,7 @@ class WeatherApp{
         this.APIKeyInput = document.getElementById('apiInput');
 
         this.getWeatherBtn.addEventListener('click', () => this.fetchWeather());
+        this.getLocationBtn.addEventListener('click', () => this.fetchWeatherByLocation());
 
     }
 }
