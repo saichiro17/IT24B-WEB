@@ -14,5 +14,6 @@ class TodoList {
         });
     }
     addOrUpdateTask() {
+        const taskText = this.todoInput.value.trim();
     }
 }
