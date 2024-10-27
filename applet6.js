@@ -1,2 +1,5 @@
 class TodoList {
+    constructor() {
+        
+    }
 }
